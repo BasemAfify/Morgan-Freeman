@@ -1,0 +1,283 @@
+.home {
+    background-image: url(../image/intro-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.havana {
+    position: relative;
+}
+
+.havana::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: .1%;
+    height: .5px;
+    transition: all .5s;
+}
+
+.nav-item:hover .havana::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 3px;
+
+}
+
+.home p::after {
+    content: "";
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+
+@keyframes example {
+    0% {
+        content: '|'
+    }
+
+    10% {
+        content: "W|"
+    }
+
+    20% {
+        content: "Web|"
+    }
+    30% {
+        content: "Web de|"
+    }
+    40% {
+        content: "Web deve|"
+    }
+    50% {
+        content: "Web develo|"
+    }
+    60% {
+        content: "Web developer|"
+    }
+    70% {
+        content: "Web devel|"
+    }
+    80% {
+        content: "Web dev|"
+    }
+    90% {
+        content: "Web|"
+    }
+    95% {
+        content: "We|"
+    }
+    100% {
+        content: "|"
+    }
+
+
+
+
+    /* 3%(Web| )   
+    4%(Web | )   
+    5%(Web D| )   
+    6%(WEB De| )   
+    7%(WEB Dev| )   
+    8%(WEB Deve| )   
+    9%(WEB Devel| )   
+    10%(WEB Develo| )   
+    11%(WEB Develop| )   
+    12%(WEB Develope| )   
+    13%(WEB Developer| )   
+    14%(WEB Develop| )   
+    15%(WEB Devel| )   
+    16%(WEB Deve| )   
+    17%(WEB Dev| )   
+    18%(WEB De| )      
+    19%(WEB Des| )   
+    20%(WEB Desi| )   
+    21%(WEB Desig| )   
+    22%(WEB Design| )   
+    23%(WEB Designe| )   
+    24%(WEB Designer| )   
+    25%(WEB Design| )   
+    26%(WEB Desi| )   
+    27%(WEB Des| )   
+    28%(WEB De| )   
+    29%(WEB D| )   
+    30%(WEB| )   
+    31%(W| )   
+    32%(| )   
+    33%(F| )   
+    34%(Fr| )   
+    35%(Fro| )   
+    36%(Fron| )   
+    37%(Front| )   
+    38%(Front | )   
+    39%(Front E| )   
+    40%(Front En| )   
+    41%(Front End| )   
+    42%(Front End | )   
+    43%(Front End D| )   
+    45%(Front End De| )   
+    46%(Front End Dev| )   
+    47%(Front End Deve| )   
+    48%(Front End Devel| )   
+    49%(Front End Develo| )   
+    50%(Front End Develop| )   
+    51%(Front End Develope| )   
+    52%(Front End Developer| )   
+    53%(Front End Develop| )   
+    54%(Front End Devel| )   
+    55%(Front End Deve| )   
+    56%(Front End Dev| )   
+    57%(Front End D| )   
+    58%(Front End| )   
+    59%(Front E| )   
+    60%(Front| )   
+    61%(Fro| )   
+    62%(F| )   
+    63%(| )   
+    64%(G| )   
+    65%(Gr| )   
+    66%(Gra| )   
+    67%(Grap| )   
+    68%(Graph| )   
+    69%(Graphi| )   
+    70%(Graphic| )   
+    71%(Graphic | )   
+    72%(Graphic D| )   
+    73%(Graphic De| )   
+    74%(Graphic Des| )   
+    75%(Graphic Desi| )   
+    76%(Graphic Desig| )   
+    77%(Graphic Design| )   
+    78%(Graphic Designe| )   
+    79%(Graphic Designer| )   
+    80%(Graphic Design| )   
+    81%(Graphic Desi| )   
+    82%(Graphic De| )   
+    83%(Graphic | )   
+    84%(Graphi| )   
+    85%(Grap| )   
+    86%(Gr| )   
+    87%(| )   
+    88%(Ce| )   
+    89%(Ceo | )   
+    90%(Ceo D| )   
+    91%(Ceo De| )   
+    92%(Ceo Dev| )   
+    93%(Ceo DevF| )   
+    94%(Ceo DevFo| )   
+    95%(Ceo DevFol| )   
+    96%(Ceo DevFoli| )   
+    97%(Ceo DevFolio| )    */
+
+}
+
+h1 {
+    font-size: 70px;
+}
+
+
+#services h2 {
+    font-size: 3rem;
+}
+
+
+.redus {
+    border-radius: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#blog h5 {
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#blog strong {
+    transition: all .5s;
+}
+
+#blog strong:hover,
+#blog h5:hover {
+    color: #0d6efd;
+}
+
+#contact .icons:hover {
+    background-color: #0d6efd;
+}
+
+#services .background {
+
+    background-image: url(../image/counters-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 50vh;
+    background-attachment: fixed;
+
+}
+
+
+
+#services .hover {
+    transition: all .5s;
+}
+
+#services .hover:hover {
+    background-color: #0d6efd;
+
+}
+
+
+.work-backgroung {
+    background-image: url(../image/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.work-backgroung1 {
+    background-image: url(../image/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 20vh;
+    background-attachment: fixed;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 770) {
+
+    #services .background {
+
+        background-image: url(../image/counters-bg.jpg);
+        background-size: 100% 100%;
+        background-position: center center;
+        min-height: 100vh;
+        background-attachment: fixed;
+
+    }
+}
